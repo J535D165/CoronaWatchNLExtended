@@ -15,7 +15,7 @@ Dutch:
 ## Content
 
 ### Descriptive-charts
-![/descriptive-charts](/descriptive-charts/static_descriptive.png)
+[<img src="descriptive-charts/static_descriptive.png" width="430">](descriptive-charts) 
 
 ### Forecast-charts
 ![/forecast-charts/static_forecast.png](/forecast-charts/static_forecast.png)
