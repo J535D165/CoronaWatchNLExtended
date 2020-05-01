@@ -21,7 +21,7 @@ Dutch:
 [<img src="forecast-charts/static_forecast.png" width="900">](forecast-charts) 
 
 ### Maps
-[<img src="maps/static_map.png" width="900">](maps) 
+[<img src="maps/static_maps.png" width="900">](maps) 
 
 ## Sources
 
