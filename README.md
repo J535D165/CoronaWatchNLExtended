@@ -25,7 +25,7 @@ Dutch:
 
 ## Sources
 
-The used datasets are obtained from the following sources.
+The used [datasets](https://github.com/J535D165/CoronaWatchNL/tree/master/data) are obtained from the following sources.
 
 | Source | Institute |Collected variables |
 |---|---| --- |
