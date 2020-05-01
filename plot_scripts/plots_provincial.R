@@ -12,12 +12,14 @@ pdf(NULL)
 # load province data
 data_prov <- read_csv("data/rivm_NL_covid19_province.csv")
 
+data_prov <- read_csv(url("https://raw.githubusercontent.com/J535D165/CoronaWatchNL/master/data-geo/data-provincial/RIVM_NL_provincial.csv"))
+
 # Positief-geteste Coronavirus besmettingen per provincie
 data_prov %>%
   filter(Datum == max(Datum), !is.na(Provincienaam)) %>%
   mutate(Provincie = forcats::fct_reorder(
-    Provincienaam, Aantal, .fun = sum, .desc = TRUE)) %>%
-  ggplot(aes(Provincie, Aantal)) +
+    Provincienaam, AantalCumulatief, .fun = sum, .desc = TRUE)) %>%
+  ggplot(aes(Provincie, AantalCumulatief)) +
   geom_col() +
   theme_minimal() +
   theme(axis.text.x=element_text(angle=45,hjust=1,vjust=1.1)) +
@@ -28,7 +30,8 @@ data_prov %>%
 
 # Positief-geteste Coronavirus besmettingen per provincie
 data_prov %>%
-  ggplot(aes(Datum, Aantal, color=Provincienaam)) +
+  filter(Type == "Totaal") %>%
+  ggplot(aes(Datum, AantalCumulatief, color=Provincienaam)) +
   geom_line() +
   theme_minimal() +
   scale_x_date(date_labels = "%d-%m-%Y",
@@ -36,7 +39,8 @@ data_prov %>%
                date_minor_breaks = "1 days") +
   labs(title = "Positief-geteste Coronavirus besmettingen per provincie") +
   theme(axis.title.x=element_blank(),
-        axis.title.y=element_blank()) +
+        axis.title.y=element_blank(),
+        axis.text.x = element_text(angle = 90, hjust = 1)) +
   ggsave("plots/province_count_time.png", width = 6, height=4)
 
 
@@ -54,16 +58,17 @@ province_shp <- st_read("ext/NLD_adm/NLD_adm1.shp") %>%
 plot(province_shp)
 
 mun <- read_csv2(
-  "ext/Gemeenten_alfabetisch_2019.csv",
-  col_types = cols(Gemeentecode = "i")
-)
+  "ext/Gemeenten_alfabetisch_2019.csv")
+#, 
+#  col_types = cols(Gemeentecode = "i")
+#)
 
 # plot map
 p_list = list()
 
 data_map = data_prov %>%
   filter(!is.na(Provincienaam)) %>%
-  complete(Datum, Provincienaam, fill = list("Aantal"=0)) %>%
+  complete(Datum, Provincienaam, fill = list("AantalCumulatief"=0)) %>%
   left_join(province_shp, by=c("Provincienaam"="NAME_1")) %>%
   st_as_sf() %>%
   st_set_crs(4326)
@@ -111,3 +116,4 @@ print("make grid plot")
 pgrid = plot_grid(plotlist=p_list,
                   ncol=4) +
   ggsave("plots/map_province.png", width = 6, height=4)
+
