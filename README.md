@@ -1,4 +1,4 @@
-![matrix.jpg](matrix.jpg)
+![corona_artwork.jpg](corona_artwork.jpg)
 
 # CoronaWatchNL: COVID-19 case counts in The Netherlands
 
