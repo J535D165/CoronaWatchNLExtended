@@ -114,6 +114,8 @@ The following maps show the development of the coronavirus in the Netherlands.
 
 ![plots/map_province.png](/plots/map_province.png)
 
+![plots/map_province_cum.png](/plots/map_province_cum.png)
+
 ![plots/map_nl_corona_abs_municipality.gif?raw=true](/plots/map_nl_corona_abs_municipality.gif?raw=true)
 
 ![plots/map_nl_corona_diff_municipality.gif?raw=true](/plots/map_nl_corona_diff_municipality.gif?raw=true)
