@@ -10,11 +10,11 @@ Dutch:
 
 # CoronaWatchNL_Models
 
-**CoronaWatchNL_Models** shows all charts, maps, and forecasts based on the datasets collected by [**CoronaWatchNL**](https://github.com/J535D165/CoronaWatchNL).
+**CoronaWatchNL_Models** is a collection of all charts, maps, and forecasts based on the datasets collected by [**CoronaWatchNL**](https://github.com/J535D165/CoronaWatchNL).
 
 ## Sources
 
-The data on which these models are built, are obtained from the following sources.
+The used datasets are obtained from the following sources.
 
 | Source | Institute |Collected variables |
 |---|---| --- |
@@ -39,10 +39,10 @@ For academic use, use presistent data from [![DOI](https://zenodo.org/badge/DOI/
 
 Image from [iXimus](https://pixabay.com/nl/users/iXimus-2352783/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4901881) via [Pixabay](https://pixabay.com/nl/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4901881)
 
-## Disclaimer
+## About CoronaWatchNL
 
 **CoronaWatchNL** is collective of researchers and volunteers in The Netherlands. We aim to make the reported number on COVID-19 disease in The Netherlands FAIR. The project is initiated and maintained by [Utrecht University Research Data Management Support](https://www.uu.nl/en/research/research-data-management) and receives support from [Utrecht University Applied Data Science](https://www.uu.nl/en/research/applied-data-science). 
 
-Help on this project is appreciated. We are looking for new datasets, data updates, graphs and maps. Please report issues in the Issue Tracker. Want to contribute? Please check out the `help wanted` tag in the [Issue Tracker](https://github.com/J535D165/CoronaWatchNL/issues). Do you wish to share an application based on these [datasets](/data)? Have a look at the [applications folder](/applications).
+Help on this project is appreciated. We are looking for new graphs, forecasts, and maps. Please report issues in the Issue Tracker. Want to contribute? Please check out the `help wanted` tag in the [Issue Tracker](https://github.com/J535D165/CoronaWatchNL/issues). Do you wish to share an application based on these [datasets](/data)? Have a look at the [applications folder](https://github.com/J535D165/CoronaWatchNL/tree/master/applications).
 
 Please send an email to jonathandebruinos@gmail.com and/or r.voorvaart@uu.nl
