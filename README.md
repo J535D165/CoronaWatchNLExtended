@@ -12,6 +12,17 @@ Dutch:
 
 **CoronaWatchNL_Models** is a collection of all charts, maps, and forecasts based on the datasets collected by [**CoronaWatchNL**](https://github.com/J535D165/CoronaWatchNL).
 
+## Content
+
+### Descriptive-charts
+![/descriptive-charts/static_descriptive.png](/descriptive-charts/static_descriptive.png)
+
+### Forecast-charts
+![/forecast-charts/static_forecast.png](/forecast-charts/static_forecast.png)
+
+### Maps
+![/maps/static_map.png](/maps/static_maps.png)
+
 ## Sources
 
 The used datasets are obtained from the following sources.
