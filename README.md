@@ -10,13 +10,11 @@ Dutch:
 
 # CoronaWatchNL_Models
 
-**CoronaWatchNL_Models** is a collection of descriptive charts, forecasts, and maps concerning COVID-19 case counts in the Netherlands. The underlying data can be found on the [CoronaWatchNL repository](https://github.com/J535D165/CoronaWatchNL). The graphs are updated on a daily basis and were generated automatically. See the license section for information about sharing the graphs.
+**CoronaWatchNL_Models** is a collection of descriptive charts, forecasts, and maps concerning COVID-19 case counts in the Netherlands. All graphics can be found in the [plots folder](/plots). The underlying data can be found on the [CoronaWatchNL repository](https://github.com/J535D165/CoronaWatchNL). The graphs are updated on a daily basis and were generated automatically. See the license section for information about sharing the graphs.
 
-## Content
+## :chart_with_upwards_trend: Descriptive charts
 
-### :chart_with_upwards_trend: Descriptive charts
-
-The following graphs show the development of Coronavirus on a daily basis. Please validate the numbers in the graphs before publishing. 
+The following graphs show the development of the coronavirus outbreak on a daily basis. 
 
 ![plots/timeline.png](/plots/timeline.png)
 
@@ -31,9 +29,9 @@ The following graphs show the development of Coronavirus on a daily basis. Pleas
 ![plots/exponential_growth_weekly.png](/plots/exponential_growth_weekly.png)
 
 
-### :chart_with_upwards_trend: Forecast charts
+## :chart_with_upwards_trend: Forecast charts
 
-The following graphs show various predictions about the development of the coronavirus in the Netherlands.
+The following graphs show various predictions about the development of the coronavirus outbreak in the Netherlands.
 
 The first predictions are based on exponential growth model.
 ![plots/prediction.png](/plots/prediction.png)
@@ -108,7 +106,7 @@ this approach, by Grant Sanderson
 ([3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw)).
 
 
-### :chart_with_upwards_trend: Maps
+## :chart_with_upwards_trend: Maps
 
 The following maps show the development of the coronavirus in the Netherlands.
 
