@@ -10,7 +10,7 @@ Dutch:
 
 # CoronaWatchNL_Models
 
-**CoronaWatchNL_Models** is a collection of descriptive charts, forecasts, and maps concerning COVID-19 case counts in the Netherlands. All graphics can be found in the [plots folder](/plots). The underlying data can be found on the [CoronaWatchNL repository](https://github.com/J535D165/CoronaWatchNL). The graphs are updated on a daily basis and were generated automatically. See the license section for information about sharing the graphs.
+**CoronaWatchNL_Models** is a collection of descriptive charts, forecasts, and maps concerning COVID-19 case counts in the Netherlands. All graphics can be found in the [plots folder](/plots). The underlying data can be found on the [CoronaWatchNL repository](https://github.com/J535D165/CoronaWatchNL). The graphs are updated on a daily basis and were generated automatically. See the [license section](#license-and-academic-use) for information about sharing the graphs.
 
 ## :chart_with_upwards_trend: Descriptive charts
 
@@ -110,8 +110,10 @@ this approach, by Grant Sanderson
 
 The following maps show the development of the coronavirus in the Netherlands.
 
+These maps display the number of newly reported COVID-19 cases.
 ![plots/map_province.png](/plots/map_province.png)
 
+These maps display the cumulative number of COVID-19 cases.
 ![plots/map_province_cum.png](/plots/map_province_cum.png)
 
 ![plots/map_nl_corona_abs_municipality.gif?raw=true](/plots/map_nl_corona_abs_municipality.gif?raw=true)
@@ -149,6 +151,6 @@ Image from [iXimus](https://pixabay.com/nl/users/iXimus-2352783/?utm_source=link
 
 **CoronaWatchNL** is collective of researchers and volunteers in The Netherlands. We aim to make the reported number on COVID-19 disease in The Netherlands FAIR. The project is initiated and maintained by [Utrecht University Research Data Management Support](https://www.uu.nl/en/research/research-data-management) and receives support from [Utrecht University Applied Data Science](https://www.uu.nl/en/research/applied-data-science). 
 
-Help on this project is appreciated. We are looking for new graphs, forecasts, and maps. Please report issues in the Issue Tracker. Want to contribute? Please check out the `help wanted` tag in the [Issue Tracker](https://github.com/J535D165/CoronaWatchNL/issues). Do you wish to share an application based on these [datasets](/data)? Have a look at the [applications folder](https://github.com/J535D165/CoronaWatchNL/tree/master/applications).
+Help on this project is appreciated. We are looking for new graphs, forecasts, and maps. Please report issues in the Issue Tracker. Want to contribute? Please check out the `help wanted` tag in the [Issue Tracker](https://github.com/J535D165/CoronaWatchNL/issues). Do you wish to share an application related to these visuals? Have a look at the CoronaWatchNL [applications folder](https://github.com/J535D165/CoronaWatchNL/tree/master/applications).
 
 Please send an email to jonathandebruinos@gmail.com and/or r.voorvaart@uu.nl
