@@ -15,13 +15,13 @@ Dutch:
 ## Content
 
 ### Descriptive-charts
-![/descriptive-charts/static_descriptive.png](/descriptive-charts)
+![/descriptive-charts/static_descriptive.png](/descriptive-charts/static_descriptive.png)
 
 ### Forecast-charts
-![/forecast-charts/static_forecast.png](/forecast-charts)
+![/forecast-charts/static_forecast.png](/forecast-charts/static_forecast.png)
 
 ### Maps
-![/maps/static_map.png](/maps)
+![/maps/static_map.png](/maps/static_map.png)
 
 ## Sources
 
