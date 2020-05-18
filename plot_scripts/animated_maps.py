@@ -25,7 +25,7 @@ df = geopandas.read_file("ext/gemeente-2019.geojson")
 # In[159]:
 
 
-data = pandas.read_csv("data/rivm_corona_in_nl_table.csv")
+data = pandas.read_csv("https://raw.githubusercontent.com/J535D165/CoronaWatchNL/master/data-geo/data-municipal/RIVM_NL_municipal.csv")
 data = df.merge(data, left_on="Gemnr", right_on="Gemeentecode", how="left")
 
 
