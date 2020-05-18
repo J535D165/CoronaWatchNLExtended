@@ -353,3 +353,215 @@ def process_plots(subject,
         plot_logarithmic_growth_bi_daily(df,
                                         subject,
                                         exponential_bi_plot_filename)
+        
+       
+# In[104]: 
+def process_plots_ziek(subject,
+                  data_filename,
+                  growth_factor_plot_filename,
+                  sigmoiod_plot_filename,
+                  exponential_plot_filename,
+                  exponential_bi_plot_filename,
+                  region,
+                  boolean_region
+                 ):
+
+    df = read_data(data_filename, region, boolean_region)
+    
+    
+    df.loc[df['AantalCumulatief'].isna(),'AantalCumulatief'] = 0
+    df = df[df['Type'] == "Ziekenhuisopname"]
+    df = df.loc[:, df.columns != 'Aantal']
+    df = df.rename(columns={'AantalCumulatief': 'Aantal'})
+    df = df.loc[:, df.columns != 'Type']
+    
+    df = add_variables(df)
+    
+    
+    intercepts, coefficients = analyze_growth_factor(df)
+
+    inflection_x, inflection_date = compute_inflection_point(df, intercepts, coefficients)
+
+    print("Inflection expected after {:.1f} days, at date {:%d/%m/%Y %H:00}".format(inflection_x, inflection_date))
+
+    create_growthfactor_plot(df,
+                             intercepts,
+                             coefficients,
+                             inflection_date,
+                             growth_factor_plot_filename,
+                             subject)
+
+    fitted_sigmoid = fit_sigmoid(df)
+
+    fitted_sigmoids = fit_sigmoid_repeated(df)
+
+    plot_sigmoids(df,
+                  fitted_sigmoid,
+                  fitted_sigmoids,
+                  sigmoiod_plot_filename,
+                  subject)
+
+    if (not boolean_region):
+        plot_logarithmic_growth_daily(df,
+                                    subject,
+                                    exponential_plot_filename)
+        plot_logarithmic_growth_bi_daily(df,
+                                        subject,
+                                        exponential_bi_plot_filename)
+        
+       
+# In[104]: 
+def process_plots_dood(subject,
+                  data_filename,
+                  growth_factor_plot_filename,
+                  sigmoiod_plot_filename,
+                  exponential_plot_filename,
+                  exponential_bi_plot_filename,
+                  region,
+                  boolean_region
+                 ):
+
+    df = read_data(data_filename, region, boolean_region)
+    
+    df = df[df['Type'] == "Overleden"]
+    df = df.loc[:, df.columns != 'Aantal']
+    df = df.rename(columns={'AantalCumulatief': 'Aantal'})
+    df = df.loc[:, df.columns != 'Type']
+    
+    df = add_variables(df)
+    
+
+    intercepts, coefficients = analyze_growth_factor(df)
+
+    inflection_x, inflection_date = compute_inflection_point(df, intercepts, coefficients)
+
+    print("Inflection expected after {:.1f} days, at date {:%d/%m/%Y %H:00}".format(inflection_x, inflection_date))
+
+    create_growthfactor_plot(df,
+                             intercepts,
+                             coefficients,
+                             inflection_date,
+                             growth_factor_plot_filename,
+                             subject)
+
+    fitted_sigmoid = fit_sigmoid(df)
+
+    fitted_sigmoids = fit_sigmoid_repeated(df)
+
+    plot_sigmoids(df,
+                  fitted_sigmoid,
+                  fitted_sigmoids,
+                  sigmoiod_plot_filename,
+                  subject)
+
+    if (not boolean_region):
+        plot_logarithmic_growth_daily(df,
+                                    subject,
+                                    exponential_plot_filename)
+        plot_logarithmic_growth_bi_daily(df,
+                                        subject,
+                                        exponential_bi_plot_filename)
+        
+        
+               
+# In[104]: 
+def process_plots_tot(subject,
+                  data_filename,
+                  growth_factor_plot_filename,
+                  sigmoiod_plot_filename,
+                  exponential_plot_filename,
+                  exponential_bi_plot_filename,
+                  region,
+                  boolean_region
+                 ):
+
+    df = read_data(data_filename, region, boolean_region)
+    
+    df = df[df['Type'] == "Totaal"]
+    df = df.loc[:, df.columns != 'Aantal']
+    df = df.rename(columns={'AantalCumulatief': 'Aantal'})
+
+    df = add_variables(df)
+
+    intercepts, coefficients = analyze_growth_factor(df)
+
+    inflection_x, inflection_date = compute_inflection_point(df, intercepts, coefficients)
+
+    print("Inflection expected after {:.1f} days, at date {:%d/%m/%Y %H:00}".format(inflection_x, inflection_date))
+
+    create_growthfactor_plot(df,
+                             intercepts,
+                             coefficients,
+                             inflection_date,
+                             growth_factor_plot_filename,
+                             subject)
+
+    fitted_sigmoid = fit_sigmoid(df)
+
+    fitted_sigmoids = fit_sigmoid_repeated(df)
+
+    plot_sigmoids(df,
+                  fitted_sigmoid,
+                  fitted_sigmoids,
+                  sigmoiod_plot_filename,
+                  subject)
+
+    if (not boolean_region):
+        plot_logarithmic_growth_daily(df,
+                                    subject,
+                                    exponential_plot_filename)
+        plot_logarithmic_growth_bi_daily(df,
+                                        subject,
+                                        exponential_bi_plot_filename)
+        
+                       
+# In[104]: 
+def process_plots_provincie(subject,
+                  data_filename,
+                  growth_factor_plot_filename,
+                  sigmoiod_plot_filename,
+                  exponential_plot_filename,
+                  exponential_bi_plot_filename,
+                  region,
+                  boolean_region
+                 ):
+
+    df = read_data(data_filename, region, boolean_region)
+    
+    df.loc[df['AantalCumulatief'].isna(),'AantalCumulatief'] = 0
+    df = df[df['Type'] == "Totaal"]
+    df = df.loc[:, df.columns != 'Aantal']
+    df = df.rename(columns={'AantalCumulatief': 'Aantal'})
+
+    df = add_variables(df)
+
+    intercepts, coefficients = analyze_growth_factor(df)
+
+    inflection_x, inflection_date = compute_inflection_point(df, intercepts, coefficients)
+
+    print("Inflection expected after {:.1f} days, at date {:%d/%m/%Y %H:00}".format(inflection_x, inflection_date))
+
+    create_growthfactor_plot(df,
+                             intercepts,
+                             coefficients,
+                             inflection_date,
+                             growth_factor_plot_filename,
+                             subject)
+
+    fitted_sigmoid = fit_sigmoid(df)
+
+    fitted_sigmoids = fit_sigmoid_repeated(df)
+
+    plot_sigmoids(df,
+                  fitted_sigmoid,
+                  fitted_sigmoids,
+                  sigmoiod_plot_filename,
+                  subject)
+
+    if (not boolean_region):
+        plot_logarithmic_growth_daily(df,
+                                    subject,
+                                    exponential_plot_filename)
+        plot_logarithmic_growth_bi_daily(df,
+                                        subject,
+                                        exponential_bi_plot_filename)
