@@ -1,7 +1,7 @@
 name: "Update models"
 on:
   schedule:
-    - cron:  '15 10 * * *'
+    - cron:  '45 10 * * *'
 
 jobs:
   download:
@@ -24,8 +24,8 @@ jobs:
           Rscript plot_scripts/plots_provincial.R
       - name: Commit models
         run: |
-          git config --local user.email "jonathandebruinos@gmail.com"
-          git config --local user.name "J535D165 Action"
+          git config --local user.email "r.voorvaart@uu.nl"
+          git config --local user.name "RVoor Action"
           git add .
           git commit -m "Update models with latest data"
         continue-on-error: true
