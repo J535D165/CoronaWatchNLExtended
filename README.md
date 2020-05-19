@@ -10,24 +10,7 @@ Dutch:
 
 # CoronaWatchNL_Models
 
-**CoronaWatchNL_Models** is a collection of descriptive charts, forecasts, and maps concerning COVID-19 case counts in the Netherlands. All graphics can be found in the [plots folder](/plots). The underlying data can be found on the [CoronaWatchNL repository](https://github.com/J535D165/CoronaWatchNL). The graphs are updated on a daily basis and were generated automatically. See the [license section](#license-and-academic-use) for information about sharing the graphs.
-
-## :chart_with_upwards_trend: Descriptive charts
-
-The following graphs show the development of the coronavirus outbreak on a daily basis. 
-
-![plots/timeline.png](/plots/timeline.png)
-
-![plots/top_municipalities.png](/plots/top_municipalities.png)
-
-![plots/timeline.png](/plots/province_count.png)
-
-![plots/province_count_time.png](/plots/province_count_time.png)
-
-![plots/exponential_growth_daily.png](/plots/exponential_growth_daily.png)
-
-![plots/exponential_growth_weekly.png](/plots/exponential_growth_weekly.png)
-
+**CoronaWatchNL_Models** is a collection of models build on COVID-19 case counts in the Netherlands. All graphics can be found in the [plots folder](/plots). The underlying data can be found on the [CoronaWatchNL repository](https://github.com/J535D165/CoronaWatchNL). The graphs are updated on a daily basis and were generated automatically. See the [license section](#license-and-academic-use) for information about sharing the graphs.
 
 ## :chart_with_upwards_trend: Forecast charts
 
@@ -105,18 +88,6 @@ For more information about this approach, please watch
 this approach, by Grant Sanderson
 ([3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw)).
 
-
-## :chart_with_upwards_trend: Maps
-
-The following maps show the development of the coronavirus in the Netherlands.
-
-These maps display the number of newly reported COVID-19 cases.
-![plots/map_province.png](/plots/map_province.png)
-![plots/map_nl_corona_diff_municipality.gif?raw=true](/plots/map_nl_corona_diff_municipality.gif?raw=true)
-
-These maps display the cumulative number of COVID-19 cases.
-![plots/map_province_cum.png](/plots/map_province_cum.png)
-![plots/map_nl_corona_abs_municipality.gif?raw=true](/plots/map_nl_corona_abs_municipality.gif?raw=true)
 
 ## Sources
 
