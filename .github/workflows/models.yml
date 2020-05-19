@@ -1,7 +1,7 @@
 name: "Update models"
 on:
   schedule:
-    - cron:  '13 12 * * *'
+    - cron:  '20 12 * * *'
 
 jobs:
   download:
