@@ -444,15 +444,15 @@ def process_plots_dood(subject,
                              growth_factor_plot_filename,
                              subject)
 
-    fitted_sigmoid = fit_sigmoid(df)
+    # fitted_sigmoid = fit_sigmoid(df)
 
-    fitted_sigmoids = fit_sigmoid_repeated(df)
+    # fitted_sigmoids = fit_sigmoid_repeated(df)
 
-    plot_sigmoids(df,
-                  fitted_sigmoid,
-                  fitted_sigmoids,
-                  sigmoiod_plot_filename,
-                  subject)
+    # plot_sigmoids(df,
+                  # fitted_sigmoid,
+                  # fitted_sigmoids,
+                  # sigmoiod_plot_filename,
+                  # subject)
 
     if (not boolean_region):
         plot_logarithmic_growth_daily(df,
