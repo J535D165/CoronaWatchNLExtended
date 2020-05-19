@@ -1,7 +1,7 @@
 name: "Update models"
 on:
   schedule:
-    - cron:  '45 10 * * *'
+    - cron:  '35 11 * * *'
 
 jobs:
   download:
@@ -17,6 +17,7 @@ jobs:
           pip install -r requirements.txt
       - name: Run models
         run: |
+          python plot_scripts/plot_utils.py
           python plot_scripts/python_plots.py
           python plot_scripts/python_plots_fatalities.py
           python plot_scripts/python_plots_hospitalisation.py
