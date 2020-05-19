@@ -2,7 +2,7 @@
 
 # CoronaWatchNL: COVID-19 case counts in The Netherlands
 
-[**CoronaWatchNL**](https://github.com/J535D165/CoronaWatchNL) collects COVID-19 disease count cases in **The Netherlands**. Numbers are collected from the RIVM (National Institute for Public Health and the Environment) website on a daily basis. This project standardizes, and publishes data and makes it **Findable, Accessible, Interoperable, and Reusable (FAIR)**. We aim to collect a complete time series and prepare a dataset for reproducible analysis and academic use.
+[**CoronaWatchNL**](https://github.com/J535D165/CoronaWatchNL) collects COVID-19 disease count cases in **The Netherlands**. Numbers are collected from the RIVM (National Institute for Public Health and the Environment) website on a daily basis. This project standardizes, and publishes data and makes it **Findable, Accessible, Interoperable, and Reusable (FAIR)**. [We](#about-coronawatchnl) aim to collect a complete time series and prepare a dataset for reproducible analysis and academic use.
 
 Dutch:
 > CoronalWatchNL verzamelt ziektecijfers over COVID-19 in Nederland. Dagelijks worden de cijfers verzameld van de website van het RIVM. Dit project standaardiseert en publiceert de gegevens en maakt ze vindbaar, toegankelijk, interoperabel en herbruikbaar (FAIR). We streven ernaar om een dataset beschikbaar te stellen voor reproduceerbare analyses en wetenschappelijk gebruik.
@@ -110,7 +110,7 @@ this approach, by Grant Sanderson
 
 ## Sources
 
-The used [datasets](https://github.com/J535D165/CoronaWatchNL) are obtained from the following sources.
+The used [datasets](https://github.com/J535D165/CoronaWatchNL/tree/master/data-geo) are obtained from the following sources.
 
 | Source | Institute |Collected variables |
 |---|---| --- |
@@ -134,6 +134,7 @@ For academic use, use presistent data from [![DOI](https://zenodo.org/badge/DOI/
 ```De Bruin, J. (2020). Number of diagnoses with coronavirus disease (COVID-19) in The Netherlands (Version v2020.3.15) [Data set]. Zenodo. http://doi.org/10.5281/zenodo.3711575```
 
 Image from [iXimus](https://pixabay.com/nl/users/iXimus-2352783/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4901881) via [Pixabay](https://pixabay.com/nl/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4901881)
+
 
 ## About CoronaWatchNL
 
