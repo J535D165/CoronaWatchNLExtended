@@ -1,4 +1,4 @@
-name: "Update plots"
+name: "Update models"
 on:
   schedule:
     - cron:  '0 12 * * *'
