@@ -10,7 +10,7 @@ Dutch:
 
 # CoronaWatchNL_Models
 
-**CoronaWatchNL_Models** is a collection of models build on COVID-19 case counts in the Netherlands. All graphics can be found in the [plots folder](/plots). The underlying data can be found on the [CoronaWatchNL repository](https://github.com/J535D165/CoronaWatchNL). The graphs are updated on a daily basis and were generated automatically. See the [license section](#license-and-academic-use) for information about sharing the graphs.
+**CoronaWatchNL_Models** is a collection of models based on COVID-19 case counts in the Netherlands. All graphics can be found in the [plots folder](/plots). The underlying data can be found on the [CoronaWatchNL repository](https://github.com/J535D165/CoronaWatchNL). The graphs are updated on a daily basis and were generated automatically. See the [license section](#license-and-academic-use) for information about sharing the graphs.
 
 ## :chart_with_upwards_trend: COVID-19 case counts
 The following graphs show various predictions about the development of the coronavirus outbreak in the Netherlands.
