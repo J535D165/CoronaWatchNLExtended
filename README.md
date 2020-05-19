@@ -12,9 +12,7 @@ Dutch:
 
 **CoronaWatchNL_Models** is a collection of models build on COVID-19 case counts in the Netherlands. All graphics can be found in the [plots folder](/plots). The underlying data can be found on the [CoronaWatchNL repository](https://github.com/J535D165/CoronaWatchNL). The graphs are updated on a daily basis and were generated automatically. See the [license section](#license-and-academic-use) for information about sharing the graphs.
 
-# :chart_with_upwards_trend: Forecast charts
-
-## COVID-19 case counts
+## :chart_with_upwards_trend: COVID-19 case counts
 The following graphs show various predictions about the development of the coronavirus outbreak in the Netherlands.
 
 ### Exponential growth model
@@ -79,21 +77,25 @@ Also a sigmoid function per province:
 
 As testing capacity is limited the numbers of positively tested people doesn't give a realistic picture of the outbreak. Using the data of people being hospitalised should give a more realistic picture.
 
-## Hospitalisation
+## :chart_with_upwards_trend: Hospitalisation
+### Exponential growth
 Here is the development of the growth factor of hospitalisations over time, with a linear model fit
 to try to estimate when the inflection point will occur (or has occurred).
 
 ![plots/growthfactor_hospitalisation.png](/plots/growthfactor_hospitalisation.png)
 
+### Sigmoidal curve
 This then results in the following sigmoidal fit:
 ![plots/sigmoid_hospitalisation.png](/plots/sigmoid_hospitalisation.png)
 
-## Fatalities
+## :chart_with_upwards_trend: Fatalities
+### Exponential growth
 Here is the development of the growth factor of fatalities over time, with a linear model fit
 to try to estimate when the inflection point will occur (or has occurred).
 
 ![plots/growthfactor_fatalities.png](/plots/growthfactor_fatalities.png)
 
+### Sigmoidal curve
 This then results in the following sigmoidal fit:
 ![plots/sigmoid_fatalities.png](/plots/sigmoid_fatalities.png)
 
