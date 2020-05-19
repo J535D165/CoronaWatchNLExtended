@@ -1,7 +1,7 @@
 name: "Update models"
 on:
   schedule:
-    - cron:  '30 12 * * *'
+    - cron:  '03 13 * * *'
 
 jobs:
   download:
@@ -22,7 +22,6 @@ jobs:
           python plot_scripts/python_plots_fatalities.py
           python plot_scripts/python_plots_hospitalisation.py
           python plot_scripts/python_plots_regional.py
-          Rscript plot_scripts/plots_provincial.R
       - name: Commit models
         run: |
           git config --local user.email "r.voorvaart@uu.nl"
