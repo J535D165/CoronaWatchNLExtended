@@ -10,7 +10,7 @@ Dutch:
 
 # CoronaWatchNL_Models
 
-**CoronaWatchNL_Models** is a collection of models based on COVID-19 case counts in the Netherlands. All graphics can be found in the [plots folder](/plots). The underlying data can be found on the [CoronaWatchNL repository](https://github.com/J535D165/CoronaWatchNL). The graphs are updated on a daily basis and were generated automatically. See the [license section](#license-and-academic-use) for information about sharing the graphs.
+**CoronaWatchNL_Models** is a collection of models based on COVID-19 data in the Netherlands. All graphics can be found in the [plots folder](/plots). The underlying data can be found on the [CoronaWatchNL repository](https://github.com/J535D165/CoronaWatchNL). The graphs are updated on a daily basis and were generated automatically. See the [license section](#license-and-academic-use) for information about sharing the graphs.
 
 ## :chart_with_upwards_trend: COVID-19 case counts
 The following graphs show various predictions about the development of the coronavirus outbreak in the Netherlands.
@@ -25,7 +25,7 @@ a log axis they deviate from the line quite drastically!
 ![plots/prediction_log10.png](/plots/prediction_log10.png)
 
 
-### Growth rate
+### Linear model: Growth rate
 
 Thus we try to fit a sigmoidal curve. One way to fit this, is to first estimate
 the growth rate, which we define here as the ratio of new cases over previous
@@ -39,12 +39,13 @@ to try to estimate when the inflection point will occur (or has occurred).
 ![plots/growthfactor.png](/plots/growthfactor.png)
 
 
-### Sigmoidal curve
+### Sigmoidal model
 
 This then results in the following sigmoidal fit:
 ![plots/sigmoid.png](/plots/sigmoid.png)
 
-### Exponential growth per province
+
+### Linear model: Growth rate per province
 
 As some provinces had the outbreak earlier than others, it's relevant to see the individual provinces. The same linear model is used to estimate the inflection point.
 ![plots/growthfactor_Drenthe.png](/plots/growthfactor_Drenthe.png)
@@ -60,7 +61,9 @@ As some provinces had the outbreak earlier than others, it's relevant to see the
 ![plots/growthfactor_Zeeland.png](/plots/growthfactor_Zeeland.png)
 ![plots/growthfactor_Zuid-Holland.png](/plots/growthfactor_Zuid-Holland.png)
 
-### Sigmoidal curve per province
+
+### Sigmoidal model per province
+
 Also a sigmoid function per province:
 ![plots/sigmoid_Drenthe.png](/plots/sigmoid_Drenthe.png)
 ![plots/sigmoid_Flevoland.png](/plots/sigmoid_Flevoland.png)
@@ -78,24 +81,24 @@ Also a sigmoid function per province:
 As testing capacity is limited the numbers of positively tested people doesn't give a realistic picture of the outbreak. Using the data of people being hospitalised should give a more realistic picture.
 
 ## :chart_with_upwards_trend: Hospitalisation
-### Exponential growth
+### Linear model: Growth rate
 Here is the development of the growth factor of hospitalisations over time, with a linear model fit
 to try to estimate when the inflection point will occur (or has occurred).
 
 ![plots/growthfactor_hospitalisation.png](/plots/growthfactor_hospitalisation.png)
 
-### Sigmoidal curve
+### Sigmoidal model
 This then results in the following sigmoidal fit:
 ![plots/sigmoid_hospitalisation.png](/plots/sigmoid_hospitalisation.png)
 
 ## :chart_with_upwards_trend: Fatalities
-### Exponential growth
+### Linear model: Growth rate
 Here is the development of the growth factor of fatalities over time, with a linear model fit
 to try to estimate when the inflection point will occur (or has occurred).
 
 ![plots/growthfactor_fatalities.png](/plots/growthfactor_fatalities.png)
 
-### Sigmoidal curve
+### Sigmoidal model
 This then results in the following sigmoidal fit:
 ![plots/sigmoid_fatalities.png](/plots/sigmoid_fatalities.png)
 
