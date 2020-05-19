@@ -1,0 +1,9 @@
+lxml
+pandas
+numpy
+requests
+matplotlib
+sklearn
+requests
+retry-requests
+dateparser
