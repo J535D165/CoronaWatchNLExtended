@@ -15,19 +15,9 @@ Dutch:
 ## :chart_with_upwards_trend: COVID-19 case counts
 The following graphs show various predictions about the development of the coronavirus outbreak in the Netherlands.
 
-### Exponential growth model
-
-The first predictions are based on exponential growth model.
-![plots/prediction.png](/plots/prediction.png)
-
-Note, however that the data no longer behave exponentially. If we plot them on
-a log axis they deviate from the line quite drastically!
-![plots/prediction_log10.png](/plots/prediction_log10.png)
-
-
 ### Linear model: Growth rate
 
-Thus we try to fit a sigmoidal curve. One way to fit this, is to first estimate
+We try to fit a sigmoidal curve. One way to fit this, is to first estimate
 the growth rate, which we define here as the ratio of new cases over previous
 new cases. Once this growth rate reaches 1, it is likely that the data will
 stop following an exponential pattern and will taper down into a sigmoid
